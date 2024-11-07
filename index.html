@@ -10,6 +10,9 @@
 
  <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  
+ <!-- fontawesome  -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css' integrity='sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw==' crossorigin='anonymous'/>
 </head>
 <body>
 
@@ -21,6 +24,7 @@
       <div class="col ">
       
        <!-- navbar  -->
+
        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
           <img src="./assets/img/duck.png" class="img-fluid" alt="">
@@ -55,11 +59,56 @@
           </div>
         </div>
       </nav>
+
        <!-- /navbar  -->
+
       </div>
     </div>
   </header>
 
  <!-- /header  -->
+
+ <main>
+  <div class="container my-3">
+    <div class="row row-cols-2">
+      <div class="col">
+       <h3 class="fw-light">Catalogo Libri</h3>
+      </div>
+  
+      <div class="col d-flex justify-content-end">
+        <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+
+      </div>
+    </div>
+
+    <!-- tabella  -->
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="col-6 col-lg-5">Titolo</th>
+          <th class="d-none d-lg-table-cell col-lg-3">Data prestito</th>
+          <th class="col-4 col-lg-3">Stato</th>
+          <th class="col-2 col-lg-1">Azioni</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="">I pilastri della terra</td>
+          <td class="d-none d-lg-table-cell">-</td>
+          <td>
+            <span class="badge text-bg-success">Success</span>
+          </td>
+          <td>
+            <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pencil"></i></button>
+            <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+
+    <!-- /tabella  -->
+  </div> 
+</main>
+
+
 </body>
 </html>
