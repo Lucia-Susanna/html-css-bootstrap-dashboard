@@ -63,6 +63,52 @@
       </div>
     </div>
   </header>
+
+  <main>
+    <div class="container py-4">
+      <h3 class="fw-light">Nuovo Libro</h3>
+      <form>
+        <section class="py-3 row border-bottom">
+          <div class="mb-3 col-6">
+            <label for="firstname" class="form-label">Nome Autore</label>
+            <input type="text" class="form-control" id="firstname" placeholder="Inserisci il nome dell'autore"/>
+          </div>
+    
+          <div class="mb-3 col-6">
+            <label for="lastname" class="form-label">Cognome autore</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Inserisci il cognome dell'autore" />
+          </div>
+    
+          <div class="mb-3">
+            <label for="title" class="form-label">Titolo</label>
+            <input type="text" class="form-control" id="title" placeholder="Inserisci il titolo del libro" aria-describedby="title-help"/>
+            <div id="title-help" class="form-text">Titolo versione italiana</div>
+          </div>
+       
+          <div class="mb-3 col-lg-4">
+            <label for="genre" class="form-label d-block">Genere</label>
+            <select id="genre" class="form-select">
+            <option selected>Scegli il genere</option>
+            <option value="">Biografia</option>
+            <option value="">Giallo</option>
+            <option value="">Rosa</option>
+            <option value="">Saggio</option>
+            </select>  
+          </div>
+       
+          <div class="mb-3 col-lg-4">
+            <label for="year" class="form-label">Anno di pubblicazione</label>
+            <input type="text" class="form-control" id="year" placeholder="Inserisci l'anno" maxlength="4"/>  
+          </div>
+       
+          <div class="mb-3 col-lg-4">
+            <label for="isbn" class="form-label">ISBN#</label>
+            <input type="text" placeholder="Inserisci il codice ISBN#" class="form-control" id="isbn"/> 
+          </div>
+        </section>
+      </form>
+    </div>
+  </main>
   
 </body>
 </html>
